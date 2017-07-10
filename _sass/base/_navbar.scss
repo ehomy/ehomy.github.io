@@ -76,7 +76,7 @@
     //border: 1px solid transparent;
     border-radius: 4px;
     display: block;
-    margin: 1em 0;
+    margin: 1.15em 0;
     border: none;
   }
 
@@ -93,7 +93,7 @@
     width: 18px;
     height: 2px;
     border-radius: 0px;
-    background-color: #ff0000;
+    background-color: $action-color;
     display: block;
   }
   .navbar-default .navbar-toggle .icon-bar + .icon-bar {
