@@ -39,9 +39,7 @@
     var __HuxNav__ = {
         close: function(){
             $navbar.className = " ";
-            // wait until animation end.
             setTimeout(function(){
-                // prevent frequently toggle
                 if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
