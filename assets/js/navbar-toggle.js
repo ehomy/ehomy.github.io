@@ -13,7 +13,7 @@ var __HuxNav__ = {
         setTimeout(function(){
             // prevent frequently toggle
             if($navbar.className.indexOf('in') < 0) {
-                $collapse.style.height = "0px"
+                //$collapse.style.height = "0px"
             }
         },400)
     },
