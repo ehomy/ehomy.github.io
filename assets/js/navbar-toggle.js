@@ -4,7 +4,7 @@
 var $body   = document.body;
 var $toggle = document.querySelector('.navbar-toggle');
 var $navbar = document.querySelector('#huxblog_navbar');
-var $collapse = document.querySelector('.navbar-collapse');
+//var $collapse = document.querySelector('.navbar-collapse');
 
 var __HuxNav__ = {
     close: function(){
@@ -18,7 +18,7 @@ var __HuxNav__ = {
         },400)
     },
     open: function(){
-        $collapse.style.height = "auto"
+        //$collapse.style.height = "auto"
         $navbar.className += " in";
     }
 }
