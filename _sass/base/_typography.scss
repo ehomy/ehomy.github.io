@@ -102,7 +102,7 @@ code {
   font-size: 0.9em;
   margin: 0;
   padding: 0 5px;
-  background-color: lighten($light-gray-color, 13%);
+  //background-color: lighten($light-gray-color, 13%);
 }
 
 pre {
@@ -110,6 +110,15 @@ pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0;
+
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
 
   code {
     line-height: 1.75em;
