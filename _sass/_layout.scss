@@ -75,11 +75,12 @@ hr {
 .site-header {
   border-top: 5px solid $light-gray-color;
   border-bottom: 1px solid lighten($light-gray-color, 5%);
-  margin-bottom: $small-spacing;
+  //margin-bottom: $small-spacing;
   //min-height: 80px;
 }
 
 .intro {
+  padding-top: .75em;
   .author-name {
     background-color: $action-color;
     color: $white-color;
