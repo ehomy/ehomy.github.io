@@ -12,14 +12,14 @@
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
-  margin-top: 1.2em;
+  margin-top: 2em;
 }
 
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
   display: block;
-  padding: 1rem;
-  border: 1px solid #eee;
+  //padding: 1rem;
+  //border: 1px solid #eee;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -34,9 +34,7 @@ a.pagination-item:hover {
   .pagination {
     margin: 3rem 0;
   }
-  .navigation {
-    margin: 0rem 0;
-  }
+  
   .pagination-item {
     float: left;
     width: 50%;
