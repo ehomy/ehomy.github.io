@@ -19,14 +19,15 @@
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
-
-  a {
-    display: block;
-  }
+  //border: 1px solid #eee;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
+  display: block;
+}
+
+.pagination-item:last-child {
+  display: block;
 }
 
 /* Only provide a hover state for linked pagination items */
