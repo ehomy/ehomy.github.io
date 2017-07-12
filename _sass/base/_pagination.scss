@@ -18,15 +18,11 @@
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
   display: block;
-  padding: 1rem;
+  //padding: 1rem;
   //border: 1px solid #eee;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
-  display: block;
-}
-
-.pagination-item:last-child {
   display: block;
 }
 
