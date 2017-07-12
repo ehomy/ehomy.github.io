@@ -134,7 +134,8 @@
     margin: 0;
     font-size: 1.5em;
     padding-top: 0.5em;
-    @include media ($tablet) {
+    //@include media ($tablet) {
+    @media (max-width: $tablet) {
       display: none;
     }
   }
@@ -147,7 +148,8 @@
   .logo {
     float: left;
     height: 4em;
-    @include media ($tablet) {
+    //@include media ($tablet) {
+    @media (max-width: $tablet) {
     	padding-left: $em-base;
     }
     img {
@@ -162,7 +164,8 @@
   nav {
     float: none;
     padding: 1.25em 0;
-    @include media ($tablet) {
+    //@include media ($tablet) {
+    @media (max-width: $tablet) {
       float: right;
       line-height: 1.5em;
     }
@@ -174,7 +177,8 @@
     overflow: visible;
     padding: 0;
     width: 100%;
-    @include media ($tablet) {
+    //@include media ($tablet) {
+    @media (max-width: $tablet) {
       display: block;
       margin: 0;
       padding: 0;
