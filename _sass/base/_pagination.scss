@@ -20,6 +20,10 @@
   display: block;
   padding: 1rem;
   border: 1px solid #eee;
+
+  a {
+    display: block;
+  }
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
