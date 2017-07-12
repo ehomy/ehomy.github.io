@@ -141,8 +141,8 @@
   }
   // Nav menu
   .navigation-wrapper {
-  	@include outer-container;
-    @include clearfix;
+  	//@include outer-container;
+    //@include clearfix;
     position: relative;
   }
   .logo {
