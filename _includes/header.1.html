@@ -1,25 +1,35 @@
 <header class="site-header">
     <!-- Navigation -->
-    <div class="container navigat">
-        <div class="navigation-wrapper">
+    <div class="container">
+        <div class="nav">
             <h1 class="logo"><a href="{{ '/' | prepend: site.baseurl }}"><i class="fa fa-github"></i> {{ site.title }}<span>blog</span></a></h1>
 
             <div class="navbar-default">
-                <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><i class="fa fa-bars"></i></a>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /.navbar-collapse -->
             </div>
 
-            <nav role="navigation">
-                <ul id="js-navigation-menu" class="navigation-menu show">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar" class=" ">
+                <div class="navbar-collapse">
+                <ul class="navbar">
                     <li><a href="{{ '/about' | prepend: site.baseurl }}">about</a></li>
                     <li><a href="{{ '/archive' | prepend: site.baseurl }}">archive</a></li>
                     <li><a href="{{ '/tags' | prepend: site.baseurl }}">tags</a></li>
                     <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">feed</a></li>
                     <li><a href="{{ '/search' | prepend: site.baseurl }}"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                 </ul>
-            </nav>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /.container -->
 </header>
 
-<script src="{{ site.baseurl }}/assets/js/navbar-toggle2.js"></script>
+<script src="{{ site.baseurl }}/assets/js/navbar-toggle.js"></script>
