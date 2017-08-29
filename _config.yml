@@ -5,7 +5,7 @@ permalink:            pretty
 relative_permalinks:  false
 
 # Setup
-title:                'Ownbin'
+title:                'Ehomy'
 tagline:              'Life is a gift'
 #description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 description:          'Just some records, have fun!'
@@ -34,5 +34,5 @@ sass:
   style:              compressed
 
 tag_page:             '/tags/'
-repo_name:            'ownbin/ownbin.github.io' # for getting the comments on github issues
+repo_name:            'ehomy/ehomy.github.io' # for getting the comments on github issues
 #repo_name:            'dwilliamson/donw.io'
