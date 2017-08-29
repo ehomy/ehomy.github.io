@@ -1,0 +1,18 @@
+
+{% if include.page %}{% assign page = include.page %}{% endif %}
+
+<span class="post-date">
+  <i class="fa fa-calendar" title="Date published"></i> {{ page.date | date_to_string }}
+<!--
+  {% for tag in page.tags %}
+    {% if forloop.first %} | {% endif %}
+    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" title="Pages tagged {{ tag }}" rel="tag" class="post-tag">{{ tag }}</a>
+  {% endfor %}
+-->
+
+  {% for tag in page.tags %}
+      {% if forloop.first %} <i class="fa fa-tags" title="page tags"></i> {% endif %}
+      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | cgi_escape }}" title="Page tagged {{ tag }}" rel="tag">{{ tag }}</a>
+      {% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+</span>

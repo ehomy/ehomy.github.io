@@ -1,13 +1,16 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset "utf-8";
+@import 'config';
 
-//@import "bourbon";
-
-@import "variables";
-@import "base/base";
-
-@import "layout";
-//@import "syntax-highlighting";
+@import 'global';
+@import 'layout';
+@import 'post';
+/*@import 'post_org';*/
+@import 'tag';
+@import 'sidebar_old';
+/*@import 'sidebar_old';*/
+@import 'comment';
+@import 'button';
+@import 'share';
+@import 'navbar';

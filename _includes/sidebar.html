@@ -1,0 +1,75 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="side-avatar animated">
+    <a class="link" href="/about"><img class="selfie" alt="" src="/assets/images/profile.jpg" /></a>
+  </div>
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+
+    {% if site.author.contact %}
+      {% assign len = site.author.contact | size %}
+      {% assign current_index = 0 %}
+      <div class="sidebar-personal-info-section">
+        <p> FOLLOW: 
+        {% for contact in site.author.contact %}
+        {% assign iconname = contact[0] %}
+        {% if contact[0] == 'email' %}
+        {% assign iconname = 'envelope' %}
+        {% endif %}
+        <a href="{{ contact[1] }}">
+          <i class="fa fa-{{ iconname }}" aria-hidden="true"></i>
+        </a>
+        {% assign current_index = current_index | plus: 1 %}
+        {% if current_index != len %}|{% endif %}
+        {% endfor %}
+        </p>
+      </div>
+      {% endif %}
+  </div>
+
+  <nav class="sidebar-nav">
+    <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
+            {% if node.title == "About" %}
+              <i class="fa fa-user" aria-hidden="true"></i>
+            {% elsif node.title == "Archive" %}
+              <i class="fa fa-archive" aria-hidden="true"></i>
+            {% elsif node.title == "Search" %}
+              <i class="fa fa-search" aria-hidden="true"></i>
+            {% elsif node.title == "Tags" %}
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            {% endif %} 
+            {{ node.title }}
+          </a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <a class="sidebar-nav-item" href="/atom.xml"><i class="fa fa-feed" aria-hidden="true"></i> Feed</a>
+    <span class="sidebar-nav-item"><i class="fa fa-info-circle" aria-hidden="true"></i> Currently v{{ site.version }}</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }} Ownbin. <br/>All rights reserved.<br/>
+      Powered by <a href="http://jekyllrb.com">Jekyll</a> & <a href="http://pages.github.com">Github Pages</a><br/>
+      Theme <a href="http://ownbin.me">LanyonMod</a> made with <i class="fa fa-heart heart-icon"></i> based on <a href="https://github.com/poole/lanyon">Lanyon</a><br/>
+      <a href="/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
+    </p>
+  </div>
+</div>

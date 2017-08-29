@@ -1,14 +1,60 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
   {% include head.html %}
-  <body>
-    <main class="wrapper">
-      {% include header.html %}
-      {{ content }}
-      {% include footer.html %}
-    </main>
+
+  <body class="">
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <!--
+            <a href="/" title="{{ site.title }}">
+              <img class="header-logo" src="{{ site.logourl }}" alt="{{ site.title }}" />
+            </a>
+            -->
+            <a href="/" title="Home"><i class="fa fa-github" aria-hidden="true"></i> {{ site.title }}<span>blog</span></a>
+            <small>{{ site.tagline }}</small>
+
+            <ul class="navbar">
+              <li><a href="{{ '/about' | prepend: site.baseurl }}">about</a></li>
+              <li><a href="{{ '/archive' | prepend: site.baseurl }}">archive</a></li>
+              <li><a href="{{ '/tags' | prepend: site.baseurl }}">tags</a></li>
+              <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">feed</a></li>
+              <li><a href="{{ '/search' | prepend: site.baseurl }}"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          </ul>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
   </body>
 </html>

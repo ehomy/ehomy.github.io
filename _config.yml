@@ -1,62 +1,38 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:            pretty
+relative_permalinks:  false
 
-# SEO settings
-title: Ownbin
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://ownbin.me
-baseurl: ""
-# baseurl: null
+# Setup
+title:                'Ownbin'
+tagline:              'Life is a gift'
+#description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:          'Just some records, have fun!'
+url:                  ''  # the base hostname & protocol for your site
+baseurl:              ''  # the subpath of your site, e.g. /blog/
+logourl:              /assets/images/logo.png # Site logo
+paginate:             5
 
-google_analytics: 
-repo: http://github.com/nandomoreirame/simplest
-disqus_shortname: "nandothemes"
-
-# Build settings
-#permalink   : /:year/:title/
-#markdown    : kramdown
-#highlighter : pygments
-
-paginate: 4
-paginate_path: "/page/:num/"
-comments: true
-
-#source: source
-#destination: _site
-
-# Sass configuration
-sass:
-  sass_dir: _sass
-  style: compressed # expanded
-
-# Author settings
+# About/contact
 author:
-  name     : Ownbin
-  job      : Server Engineer
-  bio      : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb    : /images/author.jpg
-  email    : nandomoreira.me@gmail.com
-  url      : http://ownbin.me
-  github   : http://github.com/nandomoreirame
-  twitter  : http://twitter.com/nandomoreirame
-  facebook : http://facebook.com/fernando.dev
-  linkedin : http://linkedin.com/in/nandomoreirame
+  name:               Ownbin Ho
+  url:                https://twitter.com/ownbin     
+  contact:
+    linkedin:         https://www.linkedin.com/
+    github:           https://github.com/ownbin
+    # facebook:  <hide>
+    twitter:          https://twitter.com/ownbin
+    weibo:            http://weibo.com/ownbin
+    email:            mailto:ownbin@hotmail.com
 
-# social settings
-og_locale: "pt_BR"
-twitter_card: "summary_large_image"
-twitter_site: "@nandomoreirame"
+# Custom vars
+version:              1.0.0
 
-gems:
-  - bourbon
-  - jekyll-paginate
+sass:
+  sass_dir:           _sass
+  style:              compressed
 
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
-
-repo_name: 'ownbin/ownbin.github.io' # for getting the comments on github issues
+tag_page:             '/tags/'
+repo_name:            'ownbin/ownbin.github.io' # for getting the comments on github issues
+#repo_name:            'dwilliamson/donw.io'

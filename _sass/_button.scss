@@ -1,0 +1,48 @@
+.btn {
+  display:inline-block;
+  /*
+  vertical-align:middle;
+  cursor:pointer;
+  white-space:nowrap;
+  background-image:none;
+  -webkit-user-drag:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-family:inherit;
+  line-height:1.65;
+  text-align:center;
+  text-decoration:none;
+  color:#333;
+  background-color:#fff;
+  border:1px solid transparent;
+  */
+  border: 1px solid $theme-color;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  margin:0;
+  padding: 6px 15px;
+  /*padding:10px 15px;*/
+}
+
+.btn:hover,.btn:focus {
+  /*
+  background-color:#3d8c38;
+  border:1px solid transparent;
+  */
+  background-color: $theme-color;
+  color:#fff;
+  text-decoration:none;
+  /*border-bottom:none;*/
+}
+
+.btn:active,button:active {
+  /*
+  outline:none;
+  background-image:none;
+  */
+  -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.15);
+  box-shadow:inset 0 3px 5px rgba(0,0,0,0.15);
+}
