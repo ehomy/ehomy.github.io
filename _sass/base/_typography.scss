@@ -18,7 +18,7 @@ h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  //margin: 0 0 $small-spacing;
   font-weight: 300;
 }
 
@@ -102,7 +102,7 @@ code {
   font-size: 0.9em;
   margin: 0;
   padding: 0 5px;
-  background-color: lighten($light-gray-color, 13%);
+  //background-color: lighten($light-gray-color, 13%);
 }
 
 pre {
@@ -111,7 +111,21 @@ pre {
   font-size: 0.9em;
   margin: 0;
 
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+
   code {
     line-height: 1.75em;
   }
+}
+
+.heart-icon {
+    color: #f83e4b;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b;
 }

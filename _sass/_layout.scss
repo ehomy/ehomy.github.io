@@ -41,7 +41,8 @@ hr {
 }
 
 .container {
-  padding: $base-spacing;
+  //padding: 1em;
+  padding: 1em;
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
@@ -74,11 +75,12 @@ hr {
 .site-header {
   border-top: 5px solid $light-gray-color;
   border-bottom: 1px solid lighten($light-gray-color, 5%);
-  margin-bottom: $small-spacing;
-  min-height: 80px;
+  //margin-bottom: $small-spacing;
+  //min-height: 80px;
 }
 
 .intro {
+  padding-top: .75em;
   .author-name {
     background-color: $action-color;
     color: $white-color;
@@ -93,7 +95,7 @@ hr {
 
 .logo {
   float: left;
-  margin: 0 0 1em 0;
+  margin: .36em 0;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -107,12 +109,13 @@ hr {
 }
 
 .nav {
-  min-height: 64px;
+  //min-height: 64px;
+  min-height: 42px;
 }
 
 .navbar {
-  float: right;
-  margin: 0;
+  //float: right;
+  margin: .3em 0;
   position: relative;
   padding: 0;
   pointer-events: all;
@@ -186,7 +189,7 @@ hr {
 .share {
   padding: $base-spacing 0 0;
 
-  @extend .pull-right;
+  //@extend .pull-right;
 
   h4 {
     display: inline-block;

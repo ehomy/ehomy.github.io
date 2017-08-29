@@ -19,13 +19,15 @@ $base-z-index: 0;
 
 // Colors
 $primary-color: #ec2028;
-$action-color: $primary-color;
 $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;
 $dark-gray-color: #333;
 $medium-gray-color: #999;
 $light-gray-color: #ccc;
+$green:    #1E9F75;
+
+$action-color: $green;
 
 // Font Colors
 $base-font-color: rgba($dark-gray-color, .8);
@@ -45,3 +47,36 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+
+
+
+$theme-color: $action-color;
+$theme-color-dark: darken($theme-color, 10%);
+
+$post-date-color: #9a9a9a;
+$title-color: #313131;
+$masthead-title-small-color: #c0c0c0;
+
+/* Layout */
+$reverse-layout: false;
+$overlay-sidebar: false;
+
+/* Font stack */
+$font-serif: "PT Serif", Georgia, "Times New Roman", serif;
+/*$font-serif: "Palatino Linotype","Book Antiqua","Palatino",serif;*/
+$font-sans: "PT Sans", Helvetica, Arial, sans-serif;
+$font-font-awesome: FontAwesome;
+
+
+/* test */
+$light-gray-color: #ccc;
+
+
+$em-base: 16px !default;
+$b3: 480px;
+$mobile: $b3;
+$b2: 768px;
+$tablet: $b2;
+$b1: 960px;
+$desktop: $b1;
